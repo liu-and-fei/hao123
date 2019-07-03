@@ -4,7 +4,6 @@ import  './styles/reset.css'
 import { AppWrap } from './styles/index'
 import Home from './views/home'
 import Huati from './views/huati'
-import Follow from './views/huati/follow'
 export default class App extends Component {
   render() {
     return (

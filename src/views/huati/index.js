@@ -1,16 +1,15 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom";
-import axios from "axios";
+import { connect } from "react-redux";
 import "./style.css";
 import HuatiList from "./components/huatiList";
-import { Popover, NavBar, Icon } from 'antd-mobile';
+import { initHuatiData } from "./store/actionCreate";
 
-export default class Huati extends Component {
+class Huati extends Component {
   constructor (props) {
     super (props)
     this.state = {
       headerImg: 'https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-huati/img/huati/logo_dc5cbd5.png',
-      resource_list: [],
       visible: false,
       selected: '',
     }
@@ -27,7 +26,7 @@ export default class Huati extends Component {
     });
   }
   render() {
-    let {headerImg, resource_list, QQ, sina} = this.state
+    let {headerImg} = this.state
     return (
       <div>
         <header className="header">
@@ -36,24 +35,24 @@ export default class Huati extends Component {
           <Link to='/'>我的关注</Link>
         </header>
         <ul>
-          {resource_list.map((item, index) => (
-            <HuatiList Huati={item} key={index}></HuatiList>
-          ))}
+            <HuatiList></HuatiList>
         </ul>
       </div>
     )
   }
-
-    componentDidMount () {
-      axios.get('/hao123_api/huati/getRootData')
-      .then(response => {
-        this.setState({
-          resource_list: response.data.data.resource_list.list
-        })
-      })
-
+  componentDidMount () {
+      this.props.handleGetHuatiData()
   }
-
 }
-
+export default connect (
+  (huati)=> ({
+    huati
+  })
+  ,
+  dispatch => ({
+    handleGetHuatiData(){
+      dispatch(initHuatiData())
+    }
+  })
+)(Huati)
 

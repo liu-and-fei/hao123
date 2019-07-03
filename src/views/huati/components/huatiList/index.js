@@ -1,15 +1,20 @@
 import React, { Component } from 'react'
-import { Popover, NavBar, Icon } from 'antd-mobile';
+import { Popover} from 'antd-mobile';
 import image from '../../images/fenxiang.png'
+import List from "./components/list";
+import Text from "./components/text";
+import Vote from "./components/vote";
+import { connect } from "react-redux";
 
 const Item = Popover.Item;
 
-export default class HuatiList extends Component {
+class HuatiList extends Component {
   constructor (props) {
   super (props)
     this.state = {
       visible: false,
       selected: '',
+      HuatiList: {}
     }
   }
 
@@ -24,19 +29,29 @@ export default class HuatiList extends Component {
       visible,
     });
   }
-
   render() {
-    console.log(this.props.Huati)
-    let item = this.props.Huati
+    console.log(this.props.huati.huatiList.huati.resource_list.list)
+    let images = null
     return (
         <li className="list_item">
-          <div className="item_header">
-            <img src={item.topic_info.cover_img} alt="" className="item_img" />
-            {item.topic_info.topic_name}
+          {/* <div className="item_header">
+            <img src={list.topic_info.cover_img} alt="" className="item_img" />
+            {list.topic_info.topic_name}
           </div>
-          <h2>{item.title}</h2>
+          <h2>{list.title}</h2>
           <div className="atlas">
-            <img src={item.img_list[0]} alt=""/>
+            {
+              list.map((item) => {
+              if (item.conten_type === 'image-list') {
+                images = List
+              }else if (item.conten_type === 'image-text') {
+                images = Text
+              }else if (item.conten_type === 'vote') {
+                images = Vote
+              }
+              return images
+              })
+          }
           </div>
           <div className="list_bottm">
             <p><span>05/24</span><b>图集</b></p>
@@ -60,8 +75,13 @@ export default class HuatiList extends Component {
                 <i>分享</i><img src={image} alt=""/>
               </p>
             </Popover>
-          </div>
+          </div> */}
         </li>
     )
   }
 }
+export default connect (
+  (huati) => ({
+    huati
+  })
+)(HuatiList)

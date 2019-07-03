@@ -1,9 +1,8 @@
 import React from "react";
-import * as iconActions from './store/actionCreate';
 import { connect } from 'react-redux';
 import './index.css'
 import axios from 'axios'
-import {Redirect, Route, Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 class Iconlist extends React.Component {
   constructor (props) {
@@ -15,11 +14,7 @@ class Iconlist extends React.Component {
     }
   }
   render () {
-    // let iconList = this.props.list.iconList
-    // let urlList = this.props.list.urlList
-    // let links = this.props.list.links
     let {iconList ,urlList, links, style} = this.state
-    console.log(style)
     return (
       <div className="list_all">
         <div className="iconList">
@@ -36,7 +31,9 @@ class Iconlist extends React.Component {
           ))}
         </div>
         <div className="hot_sale">
-          <a href="#" className="hot"></a>
+          <div className="hot">
+            <Link to="/huati"></Link>
+          </div>
           <div className="sale">
             <div className="inner_sale" style={style}>
               {links.map((item,index) => (

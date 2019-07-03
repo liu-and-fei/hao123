@@ -18,18 +18,16 @@
   margin-bottom: 7.5px;
   width: 100%;
   padding: 12.5px 17px 10px;
-  height: 358px;
   box-sizing: border-box
 }
 .atlas {
   width: 341px;
-  height: 192px;
   overflow: hidden;
 }
 .atlas img {
   width: 100%;
   height: auto;
-  transform: translateY(-31.875px);
+  /* transform: translateY(-31.875px); */
 }
 .item_header {
   width: 100%;
