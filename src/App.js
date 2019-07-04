@@ -10,7 +10,7 @@ export default class App extends Component {
       <Router>
       <AppWrap>
         <Switch>
-           <Route path='/' component={ Home }></Route>
+           <Route path='/' component={ Home }></Route>  
         </Switch>
       </AppWrap>
       </Router>
