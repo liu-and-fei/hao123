@@ -14,6 +14,7 @@ input{
 h1{
   height: 65px;
   display: flex;
+  margin: 0.0em 0 !important;
 }
 .logo{  
   width: 160px;
