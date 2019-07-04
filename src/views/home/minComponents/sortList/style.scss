@@ -1,0 +1,49 @@
+li{
+  list-style: none;
+}
+
+.sortlist{
+  width: 100%;
+  background-color: #fff;
+  color: #222;
+  position: relative;
+
+  .am-tabs{
+
+    .am-tabs-tab-bar-wrap{
+      width: 70%;
+      float: left;
+    }
+
+    .am-tabs-content-wrap{
+      height: auto;
+
+      .am-tabs-pane-wrap{
+        overflow: hidden;
+      }
+    }
+  }
+
+  .sortlist-more{
+    padding: 0 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    a{
+      display: block;
+      width: 50px;
+      height: 43px;
+      color: #222;
+      line-height: 43px;
+
+      span{
+        color: #ccc;
+      }
+    }
+  }
+
+  .am-tabs-default-bar-tab-active{
+    color: #24a500;
+  }
+}

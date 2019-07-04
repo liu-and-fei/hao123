@@ -1,0 +1,86 @@
+.list_all {
+  background: #ffffff
+}
+a {
+  color: rgb(51, 51, 51);
+  text-decoration: none;
+  font-size: 12px
+}
+.iconList {
+  height: 248px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap
+}
+.iconList .iconImg {
+  width: 16.66%;
+  height: 60px;
+  font-size: 12px;
+  text-align: center;
+  box-sizing: border-box;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around
+}
+.iconList .iconImg img {
+  width: 35px;
+  height: 35px
+}
+.urlList {
+  width: 100%;
+  height: 98px;
+  box-sizing: border-box;
+  padding: 10px 0
+}
+.urlList a{
+  text-align: center;
+  display: inline-block;
+  width: 75px;
+  padding: 10px 0;
+  font-size: 14px
+}
+.hot_sale {
+  width: 100%;
+  height: 71px;
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 10px
+}
+.hot_sale .hot {
+  display: inline-block;
+  height: 100%;
+  width: 55px;
+  background: url('https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-vue/img/index/huati_towline_5a73629.png') no-repeat 0 8px;
+  background-size: contain
+}
+.hot_sale .sale {
+  position: relative;
+  width: 250px;
+  height: 47px;
+  box-sizing: border-box;
+  padding: 0px 25px 0px 15px;
+  line-height: 23px;
+  overflow: hidden;
+  margin-top: 13px
+}
+.hot_sale .sale .inner_sale {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  animation: hotsale 2s infinite
+}
+@keyframes hotsale {
+  0% {top: 0}
+  100% {top:-46px}
+}
+.hot_sale .go {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.hot_sale .go a{
+  font-size: 16px
+}

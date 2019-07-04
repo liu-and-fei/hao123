@@ -1,0 +1,132 @@
+.fenlei-content {
+  width: 100%;
+  height: auto;
+  font-size: 14px;
+  position: relative;
+
+  &>.am-grid{
+    width: 96%;
+    margin: 0 auto;
+
+    .am-grid-item-content{
+
+      .am-grid-item-inner-content{
+
+        .am-grid-icon{
+          width: 38px;
+          height: 38px;
+        }
+
+        .am-grid-text{
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+
+  .fenlei-item {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    .outlist {
+      float: left;
+      width: 90%;
+      display: flex;
+      justify-content: space-around;
+
+      li {
+        width: 20%;
+        height: 40px;
+        line-height: 40px;
+        float: left;
+        text-align: center;
+        overflow: hidden;
+        box-sizing: border-box;
+
+        &:first-child {
+          color: #24a500;
+        }
+      }
+    }
+
+    .inlist {
+      width: 100%;
+      position: relative;
+
+      .am-grid{
+        margin: 6px 15px;
+
+        .am-grid-item-content{
+          position: relative;
+
+          .am-grid-item-inner-content{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+
+            .am-grid-icon{
+              display: none;
+            }
+
+            .am-grid-text{
+              width: 100%;
+              height: 100%;
+              margin: 0;
+              line-height: 40px;
+              font-size: 14px;
+              color: #222;
+            }
+          }
+        }
+      }
+
+      .jiantou{
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        position: absolute;
+        right: 0;
+        top: -36px;
+      }
+    }
+  }
+
+  .chaxun-grid {
+    margin: 15px;
+
+    .am-grid {
+
+      .am-flexbox {
+
+        .am-flexbox-item {
+          position: relative;
+
+          .am-grid-item-content {
+
+            .am-grid-text {
+              width: 100%;
+              height: 100%;
+              margin: 0;
+              line-height: 40px;
+              font-size: 14px;
+              color: #222;
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 1;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+}
