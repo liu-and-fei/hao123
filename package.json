@@ -17,7 +17,9 @@
     "react-scripts": "3.0.1",
     "react-thunk": "^1.0.0",
     "redux": "^4.0.1",
-    "styled-components": "^4.3.2"
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^4.3.2",
+    "thunk": "^0.0.1"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -48,7 +50,9 @@
       }
     ]
   ],
-
-  "proxy":"https://m.hao123.com "
-  }
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "proxy": "https://m.hao123.com"
+}
 
