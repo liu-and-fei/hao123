@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Popover, NavBar, Icon } from 'antd-mobile';
+import { Popover } from 'antd-mobile';
 import image from '../../images/fenxiang.png'
 
 const Item = Popover.Item;

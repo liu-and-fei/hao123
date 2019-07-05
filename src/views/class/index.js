@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, NavLink, Switch, Redirect } from 'react-router-dom';
+import { Route, NavLink, Switch } from 'react-router-dom';
 import './index.css'
 
 import Tuijian from './tuijian/index';
@@ -22,7 +22,7 @@ export default class Index extends React.Component {
       <div className="main-feed">
         <div className="feed-fix" style={{ display: this.state.showdisplay }} >
             <nav className="feed-nav">
-                <span><NavLink to={`/tuijian`}>推荐</NavLink></span>
+                <span><NavLink to={`/`}>推荐</NavLink></span>
                 <span><NavLink to={`/junshi`}>军事</NavLink></span>
                 <span><NavLink to={`/yule`}>娱乐</NavLink></span>
                 <span><NavLink to={`/guoji`}>国际</NavLink></span>
@@ -32,14 +32,14 @@ export default class Index extends React.Component {
             </nav>
         </div>
         <Switch>
-          <Route path={`/tuijian`} component={Tuijian} />
+          <Route path={`/`} component={Tuijian} />
           <Route path={`/junshi`} component={Junshi} />
           <Route path={`/yule`} component={Yule} />
           <Route path={`/guoji`} component={Guoji} />
           <Route path={`/shehui`} component={Shehui} />
           <Route path={`/gaoxiao`} component={Gaoxiao} />
           <Route path={`/tiyu`} component={Tiyu} />
-          <Redirect to="/tuijian" />
+          {/* <Redirect to="/tuijan" /> */}
         </Switch>
 
       </div>
