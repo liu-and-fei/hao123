@@ -62,14 +62,12 @@ export default class Tuijian extends React.Component {
     )
   }
   componentDidMount() {
-    this.getguojilist(1); //默认加载第一页数据
+    this.getlist(1); //默认加载第一页数据
     window.addEventListener('scroll', this.refresh)
   }
-
   componentWillUnmount() {
-    window.removeEventListener('scroll',this.refresh)
+    window.removeEventListener('scroll', this.refresh)
   }
-
   callback = () => {
     // console.log(1)
     let page = this.state.page + 1;
@@ -77,11 +75,11 @@ export default class Tuijian extends React.Component {
         page: page
       })
     // console.log(page);
-    this.getguojilist(1);
-    this.getguojilist(page);
+    this.getlist(1);
+    this.getlist(page);
 
   }
-  refresh() {
+  refresh(){
     //当前滚动条位置
     let scrolllist = document.body.scrollTop || document.documentElement.scrollTop;
     // console.log(scrolllist);
@@ -98,12 +96,12 @@ export default class Tuijian extends React.Component {
         page: page
       })
       // console.log(page)
-      this.getguojilist(page);
+      this.getlist(page);
     }
   }
 
-  getguojilist(page){
-    fetch(`/hao123_api/stream/news?params={%22page%22:%22index_cxv3%22}&newIndex=1&size=8&max_id=0&timestamp=1562212707357&page=${page}&id=111&city=%E6%B7%B1%E5%9C%B3`)
+  getlist(page){
+    fetch(`/hao123_api/stream/news?params={%22page%22:%22index_cxv3%22}&newIndex=1&size=8&max_id=0&timestamp=1562074355490&page=${page}&id=100&city=%E6%B7%B1%E5%9C%B3`)
   .then(response => response.json())
     .then(res => {
       // console.log(res.list);
@@ -121,4 +119,3 @@ export default class Tuijian extends React.Component {
   }
 
 }
-
