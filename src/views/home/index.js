@@ -4,17 +4,13 @@ import IconList from "./minComponents/iconList";
 import { withRouter } from 'react-router'
 //这里导入组件 
 import Head from './minComponents/heard/index'
-
-const Head_1=withRouter(Head)
-
-//这里导入组件
 import Sortlist from './minComponents/sortList';
-
+const Head_1=withRouter(Head)
 export default class Home extends Component {
   render() {
     return (
       <div id="home">
-        <Head_1></Head_1>
+         <Head_1></Head_1>
         <IconList></IconList>
         <Sortlist></Sortlist>
       </div>
