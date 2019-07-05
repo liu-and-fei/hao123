@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import { HashRouter as Router,Route,Switch} from 'react-router-dom'
+import { AppWrap } from './styles/index'
+import  './styles/reset.css'
+import 'antd-mobile/dist/antd-mobile.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Home from './views/home'
+import Huati from './views/huati'
+// import Follow from './views/huati/follow'
+
+export default class App extends Component {
+  render() {
+    return (
+      <Router>
+      <AppWrap>
+        <Switch>
+          <Route path='/huati' component={Huati}></Route>
+            <Route path='/' component={Home} ></Route>
+        </Switch>
+      </AppWrap>
+      </Router>
+    )
+  }
 }
-
-export default App;

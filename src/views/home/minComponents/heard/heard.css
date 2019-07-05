@@ -1,0 +1,240 @@
+/* 头部的大致样式 */
+a{
+  text-decoration: none;
+}
+input{
+  outline:none;
+}
+
+.head{
+  height: 147px;
+  background:#7eccf2 url(https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-vue/img/icon/weath_bg/cloudy_7474b6e.jpg) no-repeat center center;
+  background-size:cover;
+}
+h1{
+  height: 65px;
+  display: flex;
+  margin: 0.0em 0 !important;
+}
+.logo{  
+  width: 160px;
+  padding:27px 5px 11px 17px;
+  box-sizing: border-box;
+}
+.logo img{
+  width: 100px; 
+}
+.calender{
+    height: 40px;
+    line-height: 20px;
+    margin-right: 10px;
+    margin-top: 17px;
+    text-align: center;
+    overflow: hidden;
+    font-size: 12px;
+    color: #fff;
+    position: relative;
+    top: 1px;
+    overflow-y: auto;
+}
+.calender::-webkit-scrollbar{
+  display: none;
+}
+.calender .list{
+  height: 118px;
+}
+.calender .list .list_top{
+  width:58px;
+  height: 40px;
+}
+.calender .list .list_top .list_top_i{
+  height: 16px;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+.list_top_i .list_top_ii{
+  display: flex;
+  flex-direction: column;
+  height: 48px;
+}
+.list_top_i::-webkit-scrollbar{
+  display: none;
+}
+.calender .list .list_top .list_top_i i{
+  display: block;
+  height: 16px;
+} 
+
+.list-bot{
+  display: flex;
+  flex-direction: column;
+  width:58px;
+  height: 40px;
+  padding-top:1px;
+}
+.list-bot span{
+  display: block;
+}
+
+.list-bot .span_1{
+    text-align: left;
+    padding: 0 5px 0 28px;
+    background-image: url(https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-vue/img/index/taboo_7decb35.png);
+    background-position: 7px center;
+    background-size: 13.5px;
+    background-color: #25d23e;
+    height: 20px;
+    line-height: 20px;
+    background-repeat: no-repeat;
+}
+.list-bot .span_2{
+    height: 16px;
+    line-height: 17px;
+    border-top: .5px solid #b4e2ff;
+    background-color: rgba(37,210,62,.2);
+}
+.icon-tianqi{
+  display: block;
+  float: left;
+  width: 35px;
+  height: 35px;
+  margin: 20px 8px 0px 0px;
+  background: url(https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-vue/img/icon/weath/cloudy_a0964f3.png) no-repeat center center;
+  background-size: 100%;
+}
+.icon-wendu{
+  position: relative;
+  padding-right: 10px;
+  margin-top: 19px;
+  min-width: 24px;
+  line-height: 1;
+  color: #fff;
+  font-size: 40px;
+  font-family: PingFangSC-Regular,arial,sans-serif;
+}
+.icon-wendu span{
+  position: absolute;
+    right: 0;
+    top: 0;
+    width: 6px;
+    height: 6px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+.btn_login{
+    width: 28px;
+    height: 40px;
+    position: relative;
+    margin-right: 5px;
+    margin-top: 17px;
+}
+.btn_login span{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 4px;
+    height: 4px;
+    margin: 0 auto;
+    top: 9px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: width .5s;
+}
+.btn_login span:nth-child(2){
+  top:20.5px;
+}
+.btn_login span:nth-child(3){
+  top:32px;
+}
+
+/* 搜索框样式 */
+.search{
+      height: 43px;
+      position: relative;
+      left: 0;
+      right: 0;
+      top: 0;
+      margin: 0 17px;
+      -webkit-transition: top .06s;
+      transition: top .06s;
+      box-shadow: 0 0 0 1px rgba(0,0,0,.2);
+      display: flex;
+      border: none;
+}
+.search input{
+    float:left;
+    height: 30px;
+    width:230px;
+    padding:6.5px 0 6.5px 13px;
+    font-size:16px;
+    color:#000;
+    border:none;
+}
+.search span{
+  position: absolute;
+  right: 74px;
+  top:0px;
+  display: block;
+  float:left;
+  width:47px;
+  height: 43px;
+  background:#fff;
+  line-height: 40px;
+}
+.search span i{
+  display:block;
+  width:17px;
+  height: 17px;
+  font-size:17px;
+  color:#ccc;
+  margin:0 auto;
+}
+.search a{
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 73px;
+    height: 43px;
+    line-height: 43px;
+    border-left: 1px solid #eee;
+    background: #f2f2f2;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    overflow: hidden;
+}
+
+/* 候选项样式 */
+
+.options{
+  height: 39px;
+  margin:0 20px 0px 17px;
+  overflow-x:scroll;
+  overflow-y:hidden;
+  white-space: nowrap;  
+}
+.options::-webkit-scrollbar{
+  display: none;
+}
+.options a{
+  height: 100%;
+  padding-right:15px;
+  font-size: 13px;
+  color: #fff;
+  display: inline-block;
+  line-height: 39px;
+}
+.options .yy{
+  background: -webkit-linear-gradient(left,rgba(51,166,210,0),#33a6d2);
+  position: absolute;
+    top: 128px;
+    right: 0;
+    width: 57px;
+    height: 20px;
+    margin-top: -10px;
+    pointer-events: none;
+}
+
+/* #root{
+  background:rgba(0,0,0,.5);
+} */

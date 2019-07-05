@@ -1,0 +1,118 @@
+.baidu{
+  width: 100%;
+  height: 270px;
+  position: absolute;
+  z-index:99;
+  top:0;
+  left:0;
+  background: #ffffff;
+}
+.baidu h1{
+  background-color: #fff;
+  padding-top: 17.5px;
+  border-bottom: #ccc solid 0.5px;
+  height: 63px;
+  box-sizing: border-box;
+}
+.baidu h1 .baidu_search{
+  margin:0 auto;
+  height: 39px;
+}
+.baidu h1 .baidu_search input{
+    display: block;
+    width: 259px;
+    height: 46px;
+    padding-left: 0;
+    line-height: 30px;
+    font-size: 16px;
+    color: #000;
+    overflow: hidden;
+    white-space: nowrap;
+    float:left;
+    padding:6.5px 0 6.5px 13px;
+    box-sizing: border-box;
+    margin-left: 3px;
+    border:none;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.2);
+}
+.baidu h1 .baidu_search a{
+  width:82px;
+  height: 45.5px;
+  display: block;
+  float: right;;
+  color: #fff!important;
+  background-color: #3385ff!important;
+  border: 1px solid #3385ff;
+  line-height: 45px;
+  border-left: 1px solid #eee;
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+  overflow: hidden;
+  margin-left: -4px;
+  margin-top:-1px;
+
+}
+
+/* 热门搜索 */
+.his{
+  padding: 10px 17px 0;
+  overflow: hidden;
+  height: 144px;
+  top:63px;
+}
+.his a{
+  color: #777;
+  position: relative;
+    float: left;
+    line-height: 37px;
+    height: 37px;
+    padding-right: 26px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    font-size: 16px;
+    overflow: hidden;
+    margin-right: 15px;
+  
+}
+.his a .re{
+  width:20px;
+  height: 17px;
+  background-image: url(https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-vue/img/index/icon-tag-hot_b92bf63.png);
+  display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 6px;
+    margin-top: -1.5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 14px;
+}
+
+/* 关闭、热搜榜 */
+
+.close{
+    height: 39px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    text-align: center;
+    line-height: 39px;
+    border-top: 1px solid #eee;
+    margin: 10px 17px 0;
+    color: #777;
+    font-size: 16px;
+}
+.close span{
+    top: 10px;
+    right: 0;
+    height: 25px;
+    border-right: 1px solid #eee;
+    flex:1;
+  
+}
+.close span a{
+  color: #777;
+  font-size:16px;
+}
