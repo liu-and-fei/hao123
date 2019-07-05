@@ -1,6 +1,5 @@
-
 const initState = {
-  huati: {}
+  huati: [],
 }
 export default (state = initState, action) => {
   let newState = JSON.parse(JSON.stringify(state))

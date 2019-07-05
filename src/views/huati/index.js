@@ -4,7 +4,6 @@ import { connect } from "react-redux";
 import "./style.css";
 import HuatiList from "./components/huatiList";
 import { initHuatiData } from "./store/actionCreate";
-
 class Huati extends Component {
   constructor (props) {
     super (props)
@@ -25,7 +24,9 @@ class Huati extends Component {
       visible,
     });
   }
+
   render() {
+    let huati = this.props.huati.huatiList.huati
     let {headerImg} = this.state
     return (
       <div>
@@ -35,7 +36,9 @@ class Huati extends Component {
           <Link to='/'>我的关注</Link>
         </header>
         <ul>
-            <HuatiList></HuatiList>
+          {huati.map((item, index) => (
+            <HuatiList huati={item} key={index}></HuatiList>
+          ))}
         </ul>
       </div>
     )
@@ -45,8 +48,8 @@ class Huati extends Component {
   }
 }
 export default connect (
-  (huati)=> ({
-    huati
+  (state)=> ({
+    huati: state
   })
   ,
   dispatch => ({
