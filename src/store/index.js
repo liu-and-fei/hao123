@@ -1,5 +1,7 @@
-import { createStore,combineReducers,} from 'redux'
+import { createStore, combineReducers, compose } from 'redux';
 
-import reducers from './reducer'
+import * as reducers from './reducer'
 
-export default createStore(combineReducers(reducers))
+export default createStore(
+  combineReducers(reducers),window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+)
