@@ -25,12 +25,7 @@ export default class HuatiList extends Component {
       visible,
     });
   };
-
-  render() {
-    console.log(this.props.Huati);
-    let item = this.props.Huati;
-
-  renderImg () {
+  renderImg =()=> {
     let list=this.props
     if(list.huati.content_type === 'image-list'){
       return (<List data={list.huati}/>)
@@ -39,8 +34,13 @@ export default class HuatiList extends Component {
     }else if(list.huati.content_type === 'vote'){
       return (<Vote data={list.huati}/>)
     }
-}
+  }
+
   render() {
+    console.log(this.props.Huati);
+    // let item = this.props.Huati;
+
+
     return (
       <>
       {
