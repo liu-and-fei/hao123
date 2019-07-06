@@ -10,4 +10,4 @@ ReactDOM.render(
     <App></App>
   </Provider>,
   document.getElementById('root')
-)
+);

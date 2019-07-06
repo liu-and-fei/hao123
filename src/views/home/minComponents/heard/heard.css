@@ -11,18 +11,18 @@ input{
   background:#7eccf2 url(https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-vue/img/icon/weath_bg/cloudy_7474b6e.jpg) no-repeat center center;
   background-size:cover;
 }
-h1{
+.head h1{
   height: 65px;
   display: flex;
-  margin: 0.0em 0 !important;
+  margin: 0;
 }
-.logo{  
+.logo{
   width: 160px;
   padding:27px 5px 11px 17px;
   box-sizing: border-box;
 }
 .logo img{
-  width: 100px; 
+  width: 100px;
 }
 .calender{
     height: 40px;
@@ -63,7 +63,7 @@ h1{
 .calender .list .list_top .list_top_i i{
   display: block;
   height: 16px;
-} 
+}
 
 .list-bot{
   display: flex;
@@ -211,7 +211,7 @@ h1{
   margin:0 20px 0px 17px;
   overflow-x:scroll;
   overflow-y:hidden;
-  white-space: nowrap;  
+  white-space: nowrap;
 }
 .options::-webkit-scrollbar{
   display: none;

@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import './baidu.css'
 import { connect } from "react-redux"
-import axios from 'axios'
+// import axios from 'axios'
 
 class Baidu extends Component {
   state={
     baidu_search:'',
-  }
+  };
 
   render() {
     return (
@@ -50,16 +50,16 @@ class Baidu extends Component {
     this.setState({
       baidu_search:event.target.value
     })
-  }
+  };
 
   fn5= () => {
     this.props.history.push('/')
     document.getElementById('root').style.backgroundColor='#fff'
-  }
+  };
 
 
   componentDidMount(){
-    document.getElementById('root').style.backgroundColor='rgba(0,0,0,.5)'
+    document.getElementById('root').style.backgroundColor='rgba(0,0,0,.5)';
     document.getElementsByTagName('input')[0].focus();
   }
 }
@@ -72,7 +72,7 @@ export default connect(
       return {
         searchList:state.heard.searchList
       }
-      
+
     }
   )
 ,null
