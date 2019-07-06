@@ -1,4 +1,5 @@
 import React from "react";
+
 // import * as iconActions from './store/actionCreate';
 import { connect } from 'react-redux';
 import './index.css'
@@ -20,6 +21,7 @@ class Iconlist extends React.Component {
     // let links = this.props.list.links
     let {iconList ,urlList, links, style} = this.state;
     // console.log(style);
+
     return (
       <div className="list_all">
         <div className="iconList">
@@ -36,7 +38,9 @@ class Iconlist extends React.Component {
           ))}
         </div>
         <div className="hot_sale">
-          <a href="https://baidu.com" className="hot"></a>
+          <div className="hot">
+            <Link to="/huati"></Link>
+          </div>
           <div className="sale">
             <div className="inner_sale" style={style}>
               {links.map((item,index) => (
