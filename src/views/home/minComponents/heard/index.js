@@ -80,7 +80,7 @@ import Login from '../login'
           <span>
             <i className="iconfont icon-xiangji" ></i>
           </span>
-          <a href="javascript:;">百度一下</a>
+          <a href="https://baidu.com">百度一下</a>
         </div>
         {/* 候选项 */}
         <div className="options">
