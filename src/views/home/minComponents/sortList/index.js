@@ -22,7 +22,7 @@ class Sortlist extends Component {
     fetch('/hao123_api/page/getRootData?vit=h123&from=3w123&sample=1')
         .then(response => response.json())
         .then(res => {
-          console.log(res);
+          // console.log(res);
           this.setState({
             hotSite: res.hotSite,
             tabs: res.hotSite.map((item) => ({title: item.title}))
@@ -31,7 +31,6 @@ class Sortlist extends Component {
           console.log(this.state);
         });
   }
-  // TODO 这里有问题待解决
   render() {
     return (
         <div className="sortlist">

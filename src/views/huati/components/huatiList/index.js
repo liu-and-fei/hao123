@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import { Popover, NavBar, Icon } from 'antd-mobile';
+import { Popover } from 'antd-mobile';
 import image from '../../images/fenxiang.png'
 
 const Item = Popover.Item;
 
 export default class HuatiList extends Component {
   constructor (props) {
-  super (props)
+  super (props);
     this.state = {
       visible: false,
       selected: '',
@@ -23,11 +23,11 @@ export default class HuatiList extends Component {
     this.setState({
       visible,
     });
-  }
+  };
 
   render() {
-    console.log(this.props.Huati)
-    let item = this.props.Huati
+    console.log(this.props.Huati);
+    let item = this.props.Huati;
     return (
         <li className="list_item">
           <div className="item_header">

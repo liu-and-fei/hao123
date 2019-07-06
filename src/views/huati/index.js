@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import "./style.css";
 import HuatiList from "./components/huatiList";
-import { Popover, NavBar, Icon } from 'antd-mobile';
+// import { Popover, NavBar, Icon } from 'antd-mobile';
 
 export default class Huati extends Component {
   constructor (props) {
-    super (props)
+    super (props);
     this.state = {
       headerImg: 'https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-huati/img/huati/logo_dc5cbd5.png',
       resource_list: [],
@@ -25,9 +25,9 @@ export default class Huati extends Component {
     this.setState({
       visible,
     });
-  }
+  };
   render() {
-    let {headerImg, resource_list, QQ, sina} = this.state
+    let {headerImg, resource_list} = this.state;
     return (
       <div>
         <header className="header">
