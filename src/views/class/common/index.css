@@ -1,0 +1,100 @@
+/* .bd-feed{
+  margin-top: 50px;
+} */
+.bd-feed li{
+  /* display: block; */
+  margin: 0 17px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+.bd-feed .li-two{
+  padding-left: 127px;
+  position: relative;
+  min-height: 70px;
+}
+.bd-feed li .title{
+  line-height: 24px;
+  margin-bottom: 4px;
+  font-size: 18px;
+  color: #222;
+  text-align: left;
+  font-weight: 400;
+}
+.bd-feed li .oneimg{
+  height: 48px;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+.bd-feed li .tags{
+  font-size: 13px;
+  color: #ccc;
+  margin-top: 5px;
+  overflow: hidden;
+}
+.bd-feed li .tags .tag{
+    float: left;
+    padding-right: 8px;
+    line-height: 18px;
+    height: 18px;
+}
+.bd-feed li .imglist{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.bd-feed li .imgleft{
+  position: absolute;
+  left: 0;
+  top: 12px;
+}
+.bd-feed li .imglist .imgwp{
+  float: left;
+  width: 33.33%;
+  height: 75px;
+}
+.imgtwo{
+  width: 113px;
+  height: 75px;
+}
+.bd-feed li .imglist .imgwp.imgtwo img{
+  display: block;
+  width: 100%;
+  margin-left: 1px;
+}
+.tag-two{
+  margin-top: 9px;
+  float: left;
+}
+/* 回到顶部 */
+.fixed-btn{
+  padding-top: 0;
+  right: 10px;
+  width: auto;
+  height: auto;
+  bottom: 12%;
+  position: fixed;
+  /* display: none; */
+}
+.fixed-btn li {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.fixed-btn li:first-child {
+  margin-bottom: 7px;
+  background-image: url(./../img/topimg.jpg);
+}
+.fixed-btn li:last-child {
+  margin-bottom: 7px;
+  background-image: url(./../img/xuanimg.jpg);
+}
+.fixed-btn li a{
+  display: block;
+  height: 100%;
+}
+
