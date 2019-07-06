@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import IconList from "./minComponents/iconList";
-import { withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom';
+
 
 //这里导入组件
 import Head from './minComponents/heard/index'
