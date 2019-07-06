@@ -15,22 +15,22 @@ class Huati extends Component {
       selected: '',
     }
   }
-  
-  onSelect = (opt) => {
-    this.setState({
-      visible: false,
-      selected: opt.props.value,
-    });
-  };
-  handleVisibleChange = (visible) => {
-    this.setState({
-      visible,
-    });
-  }
+
+  // onSelect = (opt) => {
+  //   this.setState({
+  //     visible: false,
+  //     selected: opt.props.value,
+  //   });
+  // };
+  // handleVisibleChange = (visible) => {
+  //   this.setState({
+  //     visible,
+  //   });
+  // };
 
   render() {
-    let huati = this.props.huati.huatiList.huati
-    let {headerImg} = this.state
+    let huati = this.props.huati.huatiList.huati;
+    let {headerImg} = this.state;
     return (
       <div>
         <header className="header">
