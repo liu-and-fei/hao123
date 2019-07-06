@@ -26,10 +26,10 @@ export default class HuatiList extends Component {
     });
   };
 
+  renderImg =()=> {
+    let list=this.props;
+    if(list.huati.content_type === 'image-list'){
 
-  renderImg() {
-    let list = this.props;
-    if (list.huati.content_type === 'image-list') {
       return (<List data={list.huati}/>)
     } else if (list.huati.content_type === 'image-text') {
       return (<Text data={list.huati}/>)
@@ -39,6 +39,10 @@ export default class HuatiList extends Component {
   }
 
   render() {
+    console.log(this.props.Huati);
+    // let item = this.props.Huati;
+
+
     return (
         <>
           {
