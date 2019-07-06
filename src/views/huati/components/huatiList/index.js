@@ -1,7 +1,12 @@
-import React, {Component} from 'react'
+
+import React, { Component } from 'react';
 import List from "./components/list";
 import Text from "./components/text";
 import Vote from "./components/vote";
+import { Popover } from 'antd-mobile';
+import image from '../../images/fenxiang.png'
+
+const Item = Popover.Item;
 
 export default class HuatiList extends Component {
   constructor(props) {

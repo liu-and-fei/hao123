@@ -5,12 +5,11 @@ a{
 
 .main-feed{
   position: relative;
-  background-color: #fff;
+  background: #fff;
+  margin-top:10px;
 }
 .feed-fix{
-  /* position: fixed;
   width: 375.2px;
-  height: 0; */
   top: 0;
   left: 0;
   right: 0;
@@ -23,6 +22,7 @@ a{
   white-space: nowrap;
   position: fixed;
   height: auto;
+  font-size: 16px;
   zoom: 1;
 }
 
@@ -48,7 +48,9 @@ a{
 
 .feed-nav span a{
   color: #000;
-  margin-bottom: 10px
+  margin-bottom: 10px;
+  font-size: 16px;
+  display: block;
 }
 .feed-nav span:nth-of-type(1) i{
   padding-left: 0;

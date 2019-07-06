@@ -30,8 +30,8 @@ export default class Icon extends React.Component{
   // 下拉显示回到顶部和刷新图标
   picture() {
     let scrolllist = document.body.scrollTop || document.documentElement.scrollTop;
-    // console.log(scrolllist)
-    if (scrolllist > 400) {
+    console.log(scrolllist)
+    if (scrolllist > 850) {
       this.setState({
         display: 'block'
       })
