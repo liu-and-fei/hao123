@@ -1,0 +1,17 @@
+.text_img  {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  max-height: 341px;
+  overflow: hidden;
+}
+.text_img .text_img_box{
+  height: 110px;
+  width: 110px;
+  overflow: hidden;
+}
+.text_img img {
+  width: auto;
+  height: 100%;
+  margin: 8px
+}
