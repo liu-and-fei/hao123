@@ -4,8 +4,8 @@ import Text from "./components/text";
 import Vote from "./components/vote";
 
 export default class HuatiList extends Component {
-  constructor (props) {
-  super (props);
+  constructor(props) {
+    super(props);
     this.state = {
       visible: false,
       selected: '',
@@ -26,27 +26,25 @@ export default class HuatiList extends Component {
     });
   };
 
-  render() {
-    console.log(this.props.Huati);
-    let item = this.props.Huati;
 
-  renderImg () {
-    let list=this.props
-    if(list.huati.content_type === 'image-list'){
+  renderImg() {
+    let list = this.props;
+    if (list.huati.content_type === 'image-list') {
       return (<List data={list.huati}/>)
-    }else if(list.huati.content_type === 'image-text'){
+    } else if (list.huati.content_type === 'image-text') {
       return (<Text data={list.huati}/>)
-    }else if(list.huati.content_type === 'vote'){
+    } else if (list.huati.content_type === 'vote') {
       return (<Vote data={list.huati}/>)
     }
-}
+  }
+
   render() {
     return (
-      <>
-      {
-        this.renderImg()
-      }
-      </>
+        <>
+          {
+            this.renderImg()
+          }
+        </>
     )
   }
 }

@@ -1,7 +1,5 @@
 import React from 'react';
 import { Route, NavLink, Switch, Redirect } from 'react-router-dom';
-import './index.css'
-
 import Tuijian from './tuijian/index';
 import Junshi from './junshi/index';
 import Yule from './yule/index';
@@ -9,6 +7,8 @@ import Guoji from './guoji/index';
 import Shehui from './shehui/index';
 import Gaoxiao from './gaoxiao/index';
 import Tiyu from './tiyu/index';
+
+import './index.css'
 
 export default class Index extends React.Component {
   constructor(props) {

@@ -5,6 +5,7 @@ a{
 
 .main-feed{
   position: relative;
+  background-color: #fff;
 }
 .feed-fix{
   /* position: fixed;
