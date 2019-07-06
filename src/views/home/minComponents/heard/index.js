@@ -8,7 +8,7 @@ import Login from '../login'
 
  class Head extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       lunar: '',
       city: '',
@@ -17,7 +17,7 @@ import Login from '../login'
       option: [],
       temp: '',
     }
-  }                                       
+  }
   render() {
     return (
       <div>
@@ -28,7 +28,7 @@ import Login from '../login'
       <div className="head">
         <h1>
           <a href="https://j.php?z=2&page=index_cxv3&pos=head_background&category=&qt=tz&url=http%3A%2F%2Fapp.hao123.com%2Fapp&key=03b198af68153ba7f1032ce48e470152" className="logo">
-            <img src="//m.hao123.com/static/img/logo/logo-2.0.png" />
+            <img src="//m.hao123.com/static/img/logo/logo-2.0.png" alt=""/>
           </a>
 
           {/* 滚动天气 */}
@@ -96,7 +96,7 @@ import Login from '../login'
           <span className="yy"></span>
         </div>
       </div>
-      
+
       </div>
     )
 
@@ -104,16 +104,16 @@ import Login from '../login'
 
   fn1=() => {
     this.props.history.push('/search');
-  }
+  };
   fn3=() => {
     this.props.history.push('/login')
-  }
+  };
 
   componentDidMount() {
     //数据请求
     axios.get('/hao123_api/page/getRootData?vit=h123&from=3w123&sample=1').then(respones => {
-      let res = respones.data.header
-      console.log(res)
+      let res = respones.data.header;
+      // console.log(res);
       //将数据写到仓库中
       this.setState({
         lunar: res.almanac.date,
@@ -122,17 +122,17 @@ import Login from '../login'
         desc: res.weather.desc,
         //w5: res.weather.alarm[0].w5,
         temp: res.weather.temp
-      })
-      this.props.fn1(res.searchList)
+      });
+      this.props.fn1(res.searchList);
       this.props.fn2(res)
     }
-    )
-   
+    );
+
     // this.props.fn1()
 
     // 滚动天气的小轮播图
     let top = document.getElementsByClassName('list_top_i')[0];
-    let maxTop=document.getElementsByClassName('calender')[0];
+    // let maxTop=document.getElementsByClassName('calender')[0];
     let m = 16;
     let fn1 = () => {
       if (m > 32) {
@@ -140,14 +140,14 @@ import Login from '../login'
         // top.scrollTop=0;
       }
       if (top.scrollTop >= m) {
-        clearInterval(time)
+        clearInterval(time);
         setTimeout(() => {
-          m += 16
+          m += 16;
           setInterval(fn1, 100);
         }, 1000);
       }
       top.scrollTop += 1;
-    }
+    };
 
     // let fn2=() => {
     //   if(maxTop.scrollTop>41){

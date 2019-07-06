@@ -5,13 +5,31 @@ import Vote from "./components/vote";
 
 export default class HuatiList extends Component {
   constructor (props) {
-  super (props)
+  super (props);
     this.state = {
       visible: false,
       selected: '',
       HuatiList: {}
     }
   }
+
+
+  onSelect = (opt) => {
+    this.setState({
+      visible: false,
+      selected: opt.props.value,
+    });
+  };
+  handleVisibleChange = (visible) => {
+    this.setState({
+      visible,
+    });
+  };
+
+  render() {
+    console.log(this.props.Huati);
+    let item = this.props.Huati;
+
   renderImg () {
     let list=this.props
     if(list.huati.content_type === 'image-list'){

@@ -1,12 +1,14 @@
 import React from "react";
+
+// import * as iconActions from './store/actionCreate';
 import { connect } from 'react-redux';
 import './index.css'
 import axios from 'axios'
-import {Link} from 'react-router-dom'
+import { Link} from 'react-router-dom'
 
 class Iconlist extends React.Component {
   constructor (props) {
-    super(props)
+    super(props);
     this.state = {
       iconList: [],
       links: [],
@@ -14,7 +16,12 @@ class Iconlist extends React.Component {
     }
   }
   render () {
-    let {iconList ,urlList, links, style} = this.state
+    // let iconList = this.props.list.iconList
+    // let urlList = this.props.list.urlList
+    // let links = this.props.list.links
+    let {iconList ,urlList, links, style} = this.state;
+    // console.log(style);
+
     return (
       <div className="list_all">
         <div className="iconList">

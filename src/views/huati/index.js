@@ -1,18 +1,21 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import "./style.css";
 import HuatiList from "./components/huatiList";
 import { initHuatiData } from "./store/actionCreate";
+
+import "./style.css";
+
 class Huati extends Component {
   constructor (props) {
-    super (props)
+    super (props);
     this.state = {
       headerImg: 'https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-huati/img/huati/logo_dc5cbd5.png',
       visible: false,
       selected: '',
     }
   }
+  
   onSelect = (opt) => {
     this.setState({
       visible: false,

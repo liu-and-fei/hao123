@@ -6,7 +6,7 @@ import 'antd-mobile/dist/antd-mobile.css';
 
 import Home from './views/home'
 import Huati from './views/huati'
-import Follow from './views/huati/follow'
+// import Follow from './views/huati/follow'
 
 export default class App extends Component {
   render() {
