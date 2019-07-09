@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1a36b81d-b69e-4b1b-b85e-709fa74b6d3b" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/home/minComponents/heard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/home/minComponents/heard/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/huati/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/huati/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/class/common/smallicon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/class/common/smallicon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/huati/components/huatiList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/huati/components/huatiList/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,7 +16,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/views/huati/components/huatiList/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+              <folding>
+                <element signature="e#1#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -36,6 +47,7 @@
       <find>&lt;a href=&quot;&quot;</find>
       <find>&lt;a href=&quot;javascript:;&quot;</find>
       <find>&lt;a</find>
+      <find>console.log</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;a href=&quot;https://baidu.com&quot;</replace>
@@ -67,7 +79,6 @@
         <option value="$PROJECT_DIR$/src/views/home/minComponents/sortList/index.js" />
         <option value="$PROJECT_DIR$/abc.html" />
         <option value="$PROJECT_DIR$/src/views/home/minComponents/heard/store/index.js" />
-        <option value="$PROJECT_DIR$/src/views/huati/components/huatiList/index.js" />
         <option value="$PROJECT_DIR$/src/views/home/index.js" />
         <option value="$PROJECT_DIR$/src/views/class/index.css" />
         <option value="$PROJECT_DIR$/src/views/class/index.js" />
@@ -77,6 +88,8 @@
         <option value="$PROJECT_DIR$/src/store/index.js" />
         <option value="$PROJECT_DIR$/src/views/huati/index.js" />
         <option value="$PROJECT_DIR$/src/views/home/minComponents/heard/index.js" />
+        <option value="$PROJECT_DIR$/src/views/class/common/smallicon.js" />
+        <option value="$PROJECT_DIR$/src/views/huati/components/huatiList/index.js" />
       </list>
     </option>
   </component>
@@ -94,6 +107,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -117,21 +131,29 @@
               <item name="hao123" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="class" type="462c0819:PsiDirectoryNode" />
+              <item name="huati" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hao123" type="b2602c69:ProjectViewProjectNode" />
               <item name="hao123" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="class" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="huati" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hao123" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hao123" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="huati" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="huatiList" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -195,11 +217,13 @@
       <workItem from="1562287430644" duration="3611000" />
       <workItem from="1562307456601" duration="5894000" />
       <workItem from="1562373700260" duration="5603000" />
+      <workItem from="1562562471659" duration="10000" />
+      <workItem from="1562634240601" duration="672000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103416000" />
+    <option name="totallyTimeSpent" value="104098000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -212,8 +236,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49753696" visible="true" weight="0.16604617" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49753696" visible="true" weight="0.16604617" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="TODO" order="3" sideWeight="0.50246304" side_tool="true" weight="0.16604617" />
@@ -337,16 +362,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/abc.html" />
-    <entry file="file://$PROJECT_DIR$/src/views/huati/components/huatiList/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="42" column="10" lean-forward="true" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/home/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -382,13 +397,6 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/class/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -498,6 +506,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/class/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="57" column="30" lean-forward="true" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/class/common/smallicon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/huati/components/huatiList/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+          <folding>
+            <element signature="e#1#42#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
