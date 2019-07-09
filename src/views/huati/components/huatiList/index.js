@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 import List from "./components/list";
 import Text from "./components/text";
 import Vote from "./components/vote";
-import { Popover } from 'antd-mobile';
-import image from '../../images/fenxiang.png'
+// import { Popover } from 'antd-mobile';
+// import image from '../../images/fenxiang.png'
 
-const Item = Popover.Item;
+// const Item = Popover.Item;
 
 export default class HuatiList extends Component {
   constructor(props) {
@@ -19,17 +19,17 @@ export default class HuatiList extends Component {
   }
 
 
-  onSelect = (opt) => {
-    this.setState({
-      visible: false,
-      selected: opt.props.value,
-    });
-  };
-  handleVisibleChange = (visible) => {
-    this.setState({
-      visible,
-    });
-  };
+  // onSelect = (opt) => {
+  //   this.setState({
+  //     visible: false,
+  //     selected: opt.props.value,
+  //   });
+  // };
+  // handleVisibleChange = (visible) => {
+  //   this.setState({
+  //     visible,
+  //   });
+  // };
 
   renderImg =()=> {
     let list=this.props;
